@@ -16,9 +16,6 @@ defmodule Pru do
 
     """
     def init_pins do
-        # By default loads the cape-universal and cape-univ-hdmi
-        # so the app has access to the max number of pins since
-        # HDMI is disabled
         :os.cmd('config-pin overlay cape-universal > /dev/null')
         :os.cmd('config-pin overlay cape-univ-hdmi > /dev/null')
         {:ok}
@@ -78,7 +75,6 @@ defmodule Pru do
 
     """
     def halt( pru ) do
-        # Sends command to halt the specified PRU Core
         case pru do
             0 ->
                 :os.cmd('echo "4a334000.pru0" > /sys/bus/platform/drivers/pru-rproc/unbind')
