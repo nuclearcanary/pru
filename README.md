@@ -1,6 +1,6 @@
 # Pru
 
-##BeagleBone Black PRU helper library for [Nerves](http://nerves-project.com)
+## BeagleBone Black PRU helper library for [Nerves](http://nerves-project.com)
 
 Basic library that enables easy interaction with the PRU cores present
 in the BeagleBone Black.
