@@ -3,6 +3,8 @@ defmodule Pru.Mixfile do
 
   def project do
     [
+      name: "Pru",
+      source_url: "https://github.com/nuclearcanary/pru",
       app: :pru,
       version: "0.1.0",
       elixir: "~> 1.5",
@@ -24,5 +26,11 @@ defmodule Pru.Mixfile do
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
     ]
+  end
+  defp package do
+    [maintainers: ["Mikel Cranfill"],
+     files: ["lib", "LICENSE", "mix.exs", "README.md"],
+     licenses: ["MIT"],
+     links: %{"Github" => "https://github.com/nuclearcanary/pru"}]
   end
 end
